@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
-	github.com/fabiotavarespr/httpexpect v0.0.1
+	github.com/fabiotavarespr/httpexpect v0.0.2
 	github.com/fasthttp/websocket v1.5.0
 	github.com/gin-gonic/gin v1.8.1
 	github.com/gorilla/websocket v1.5.0
