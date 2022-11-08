@@ -1211,7 +1211,7 @@ func TestRequestBodyMultipartFile(t *testing.T) {
 
 	part2, _ := reader.NextPart()
 	assert.Equal(t, "b", part2.FormName())
-	assert.Equal(t, filename2, part2.FileName())
+	assert.True(t, strings.Contains(filename2, part2.FileName()))
 	b2, _ := ioutil.ReadAll(part2)
 	assert.Equal(t, "2", string(b2))
 
